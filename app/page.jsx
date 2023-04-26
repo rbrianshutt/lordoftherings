@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import lotr from '../public/Lord-of-the-Rings-Logo.png';
+import lotr from '../public/lord-of-the-rings-logo.png';
 
 async function fetchLotr() {
 	const res = await fetch(`https://the-one-api.dev/v2/character?sort=name:asc`, {
 		headers: {
 			Authorization: `Bearer ${process.env.API_KEY}`,
-			 'Content-Type': 'application/json',
+			'Content-Type': 'application/json',
 		},
 	});
 
@@ -24,7 +24,7 @@ export default async function Home() {
 	return (
 		<div className='bg-gray-900 text-gray-200'>
 			<Image src={lotr} className='bg-gray-900 text-gray-200 mx-auto' />
-      <h1 className='text-5xl text-center'>Characters and Stats</h1>
+			<h1 className='text-5xl text-center'>Characters and Stats</h1>
 			<div className='w-full flex flex-wrap justify-center bg-gray-900 text-gray-200'>
 				{rings.docs.map((ring) => (
 					<ul key={ring._id} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4'>
