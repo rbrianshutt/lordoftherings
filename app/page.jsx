@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import lotr from '../public/lord-of-the-rings-logo.png';
+import lotr from '../public/lordoftheringslogo.png';
 
 async function fetchLotr() {
 	const res = await fetch(`https://the-one-api.dev/v2/character?sort=name:asc`, {
