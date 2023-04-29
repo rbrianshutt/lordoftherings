@@ -25,9 +25,9 @@ export default async function Home() {
 		<div className='bg-gray-900 text-gray-200 max-w-screen overflow-x-hidden'>
 			<Image src={lotr} className='bg-gray-900 text-gray-200 mx-auto' />
 			<h1 className='text-5xl text-center'>Characters and Stats</h1>
-			<div className='flex flex-wrap justify-center bg-gray-900 text-gray-200'>
+			<div className='w-full flex flex-wrap justify-center bg-gray-900 text-gray-200'>
 				{rings.docs.map((ring) => (
-					<ul key={ring._id} className='sm:w-1/2 md:w-1/3 lg:w-1/4 p-4'>
+					<ul key={ring._id} className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4'>
 						<p className='bg-gray-800 shadow-lg text-xl font-bold px-2'>{ring.name}</p>
 						<p className='bg-gray-800 shadow-lg px-2'>Race: {ring.race}</p>
 						<p className='bg-gray-800 shadow-lg px-2'>Gender: {ring.gender}</p>
