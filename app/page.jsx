@@ -22,7 +22,7 @@ export default async function Home() {
 	// console.log(rings);
 
 	return (
-		<div className='bg-gray-900 text-gray-200 max-w-screen overflow-x-hidden'>
+		<div className='bg-gray-900 text-gray-200 overflow-x-hidden'>
 			<Image src={lotr} className='bg-gray-900 text-gray-200 mx-auto' />
 			<h1 className='text-5xl text-center'>Characters and Stats</h1>
 			<div className='w-full flex flex-wrap justify-center bg-gray-900 text-gray-200'>
